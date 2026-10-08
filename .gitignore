@@ -1,0 +1,66 @@
+# WordPress core
+/wp-admin/
+/wp-includes/
+/*.php
+!/index.php
+!/wp-config-sample.php
+
+# WordPress configuration / secrets
+/wp-config.php
+
+# WordPress uploads
+/wp-content/uploads/
+
+# WordPress cache / generated files
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup*/
+/wp-content/backups/
+/wp-content/ai1wm-backups/
+/wp-content/debug.log
+
+# WordPress plugins/themes: ignore installed third-party code by default
+# Remove these two lines if you want to version all plugins/themes.
+/wp-content/plugins/*
+!/wp-content/plugins/.gitkeep
+/wp-content/themes/*
+!/wp-content/themes/.gitkeep
+
+# Keep your custom theme/plugin (uncomment and change names)
+# !/wp-content/themes/your-theme/
+# !/wp-content/plugins/your-plugin/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node dependencies / build output
+node_modules/
+dist/
+build/
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
